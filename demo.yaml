@@ -1,0 +1,8 @@
+---
+  - name : my first play book
+    hosts : demo
+    gather_facts: yes
+    tasks:
+    - name : Task by Pravin
+      debug:
+        msg: "hi i am working fine"
