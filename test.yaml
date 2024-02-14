@@ -1,7 +1,0 @@
----
-- hosts: demo
-  name: play1
-  tasks:
-  - name: installapache2
-    apt: name=apache2 state=latest
-    become: true
