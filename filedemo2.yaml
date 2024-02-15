@@ -1,0 +1,10 @@
+---
+- name : "file variable demo"
+  hosts : demo
+  vars_files:
+    - /home/ubuntu/devopsprac/test.yaml
+
+  tasks :
+    - name: "Task for file variable"
+      debug :
+       msg : "{{URL}}"

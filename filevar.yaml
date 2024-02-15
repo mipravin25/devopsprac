@@ -1,9 +1,11 @@
----
-- name : "file variable demo"
-  hosts : demo
-  vars_file:
-             URL :
-  tasks :
-    -name: "Task for file variable"
-     debug :
-      msg : "{{URL}}"
+--- 
+- name: vars 
+  hosts: demo 
+  gather_facts: yes 
+ 
+  vars_files:  
+    - variables.yaml 
+  tasks:  
+    - name: a task    
+      debug:      
+        msg: "I am a {{ varname }}"
