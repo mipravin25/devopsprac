@@ -1,7 +1,7 @@
 ---
 - name : only for node inf
   hosts: demo
-  become: true
+  become: no
   gather_facts: yes
   tasks:
    - name: here is gid for local user
