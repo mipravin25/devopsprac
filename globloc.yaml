@@ -1,0 +1,16 @@
+---
+- name : "play book for global_andl_ocal"
+  hosts : demo
+  gather_facts: yes 
+  vars :
+          URL : "www.globalcom"
+  tasks:
+   - name : "Task by Pravin for global"
+     debug:
+      msg: "{{URL}}"
+   - name : "Task by Pravin for for local"
+     vars :
+       URL : "www.local.com"
+     debug:
+      msg: "{{URL}}"
+

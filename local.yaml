@@ -1,0 +1,25 @@
+##---
+##- name : "play book for global"
+##  hosts : demo
+##  gather_facts: yes
+##  tasks:
+##   - name : "Task by Pravin for global variabl"
+##     vars :
+##      URL : "www.pravin.com"
+
+##     debug:
+##      msg: "{{URL}}"
+---
+  - name : "play book for global"
+    hosts : demo
+    gather_facts: yes
+    ##vars :
+    ##URL : "www.pravin.com"
+    tasks:
+    - name : "Task by Pravin for global variabl"
+
+      vars :
+       URL : "www.pravin.com"
+      debug:
+        msg: "{{URL}}"
+

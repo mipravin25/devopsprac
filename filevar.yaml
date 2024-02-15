@@ -1,0 +1,9 @@
+---
+- name : "file variable demo"
+  hosts : demo
+  vars_file:
+             URL :
+  tasks :
+    -name: "Task for file variable"
+     debug :
+      msg : "{{URL}}"

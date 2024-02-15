@@ -1,0 +1,11 @@
+---
+- name:
+  hosts: demo
+  vars_prompt:
+    - name: user
+      prompt: Give username......
+      private: no
+  tasks:
+    - name: Print the variables that user provided
+      debug:
+        msg: "User is..... {{ user }}"
