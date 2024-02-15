@@ -1,13 +1,17 @@
 ---
 - name : only for node inf
   hosts: demo
-  become: no
+  become: yes
   gather_facts: yes
   tasks:
    - name: here is gid for local user
      debug:
       msg: "{{ansible_user_gid}}"
   tasks:
-   - name: here is gid for local user
+   - name: here is os_family for local user
      debug:
       msg: "{{ansible_os_family}}"
+  tasks:
+   - name: here is machine_id for local user
+     debug:
+      msg: "{{ansible_machine_id}}"    
