@@ -7,3 +7,7 @@
    - name: here is gid for local user
      debug:
       msg: "{{ansible_user_gid}}"
+  tasks:
+   - name: here is gid for local user
+     debug:
+      msg: "{{ansible_user_gid}}"
