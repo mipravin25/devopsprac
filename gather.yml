@@ -1,0 +1,9 @@
+---
+- name : only for node inf
+  hosts: demo
+  become: true
+  gather_facts: yes
+  tasks:
+   - name: here is gid for local user
+     debug:
+      msg: "{{ansible_user_gid}}"
