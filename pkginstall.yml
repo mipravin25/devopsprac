@@ -28,8 +28,8 @@
         state: started
       when: ansible_os_family == "Debian"
     
-     - name: stop apache2
-       apt:
+    - name: stop apache2
+       package:
          name: apache2
          state: absent
           update_cache: yes
