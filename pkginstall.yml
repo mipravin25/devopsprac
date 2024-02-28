@@ -2,7 +2,13 @@
   hosts: all
   #hosts: all
   tasks:
-        - name: install web package
+    - name: install web package
+      package:
+        name: httpd
+        state: latest
+      when: ansible_os_family == "RedHat"
+  
+    - name: install web package
       package:
         name: apache2
         state: latest
