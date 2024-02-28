@@ -30,7 +30,7 @@
     - name: enable apache2
       systemd:
         name: apache2
-        state: enable
+        enabled: enable
       when: ansible_os_family == "Debian"
     
     # - name: start apache2
