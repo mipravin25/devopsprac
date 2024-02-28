@@ -2,7 +2,7 @@
   hosts: all
   #hosts: all
   tasks:
-    - name: install web package
+        - name: install web package
       package:
         name: apache2
         state: latest
