@@ -1,5 +1,5 @@
 #!/bin/bash
 #read commentt
-sudo git add . &&
-sudo git commit -m "latesupdate" &&
-sudo git push origin master
+git add . &&
+git commit -m "latesupdate" &&
+git push origin master
