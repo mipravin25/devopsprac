@@ -1,5 +1,5 @@
 #!/bin/bash
-read commentt
+#read commentt
 sudo git add .
 sudo git commit -m "latesupdate"
 sudo git push origin master
