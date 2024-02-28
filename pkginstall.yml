@@ -28,11 +28,10 @@
         state: started
       when: ansible_os_family == "Debian"
     
-    # - name: stop apache2
-    # - name: stop apache2
-    #   apt:
-    #     name: apache2
-    #     state: absent
+     - name: stop apache2
+       apt:
+         name: apache2
+         state: absent
           update_cache: yes
     #   when: ansible_os_family == "Debian"
     - name: enable apache2
