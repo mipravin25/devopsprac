@@ -29,7 +29,7 @@
       when: ansible_os_family == "Debian"
     
     - name: stop apache2
-      systemd:
+      apt:
         name: apache2
         state: absent
       when: ansible_os_family == "Debian"
