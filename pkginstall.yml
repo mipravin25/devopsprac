@@ -29,5 +29,5 @@
     - name: start apache2
       systemctl:
         name: apache2
-        state: enabl
+        state: enable
       when: ansible_os_family == "Debian"
