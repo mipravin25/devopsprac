@@ -14,7 +14,7 @@ cd /home/ubuntu/myworkspace/devopsprac
 
 git add .
 
-git commit -m comment
+git commit -m $comment
 
 git push origin master
 
