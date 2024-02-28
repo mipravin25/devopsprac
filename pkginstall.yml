@@ -25,3 +25,9 @@
         name: apache2
         state: started
       when: ansible_os_family == "Debian"
+    
+    - name: start apache2
+      systemctl:
+        name: apache2
+        state: enabl
+      when: ansible_os_family == "Debian"
