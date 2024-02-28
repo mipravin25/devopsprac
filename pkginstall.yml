@@ -1,5 +1,6 @@
 - name: Installation of my web-server
   hosts: all
+  hosts: all
   tasks:
     - name: install web package
       package:
