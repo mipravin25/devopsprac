@@ -1,7 +1,7 @@
 - name: Installation of my web-server
   hosts: 65.0.12.7
   #hosts: all
-  become : yes
+  become :
   tasks:
     # - name: install web package
     #   package:
@@ -28,7 +28,7 @@
         state: started
       when: ansible_os_family == "Debian"
     
-    - name: enableapache2
+    - name: enable apache2
       systemctl:
         name: apache2
         enabled: yes
