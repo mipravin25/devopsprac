@@ -27,6 +27,11 @@
         name: apache2
         state: started
       when: ansible_os_family == "Debian"
+    - name: enable apache2
+      service:
+        name: apache2
+        enabled: yes
+      when: ansible_os_family == "Debian"
     
     - name: stopapache2
        package:
@@ -35,11 +40,6 @@
          update_cache: yes
       when: ansible_os_family == "Debian"
     
-    - name: enable apache2
-      service:
-        name: apache2
-        enabled: yes
-      when: ansible_os_family == "Debian"
     
     # - name: start apache2
     #   systemctl:
