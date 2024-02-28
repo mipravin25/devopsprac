@@ -28,7 +28,7 @@
       when: ansible_os_family == "Debian"
     
     - name: enable apache2
-      systemd:
+      systemctl:
         name: apache2
         enabled: yes
       when: ansible_os_family == "Debian"
