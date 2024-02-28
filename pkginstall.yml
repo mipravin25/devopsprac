@@ -15,11 +15,11 @@
         update_cache: yes
       when: ansible_os_family == "Debian"
 
-    - name: start httpd
-      systemd:
-        name: httpd
-        state: started
-      when: ansible_os_family == "RedHat"
+    # - name: start httpd
+    #   systemd:
+    #     name: httpd
+    #     state: started
+    #   when: ansible_os_family == "RedHat"
 
     - name: start apache2
       systemd:
