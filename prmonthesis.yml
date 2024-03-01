@@ -32,4 +32,4 @@ scrape_configs:
     scrape_interval: 10s
     static_configs:
       - targets: ["43.205.206.16:9100"]
-                  ["13.235.27.55:9100"]
+                ["13.235.27.55:9100"]
